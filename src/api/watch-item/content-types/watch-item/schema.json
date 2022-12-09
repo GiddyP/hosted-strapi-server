@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "watch_items",
+  "info": {
+    "singularName": "watch-item",
+    "pluralName": "watch-items",
+    "displayName": "watchItem",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "longDesc": {
+      "type": "richtext"
+    },
+    "shortDesc": {
+      "type": "richtext"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Recommended",
+        "newArrivals",
+        "bestPrices",
+        "freeDelivery",
+        "topRated"
+      ]
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "reviews": {
+      "type": "richtext"
+    }
+  }
+}
